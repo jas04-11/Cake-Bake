@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cake Bake</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	
+</head>
+<body>
+	<div id="home">
+		<nav>
+			<h1 class="logo">Cake Bake</h1>
+			<ul class="ul">
+				<a class="a" href="#home">Home</a>
+				<a class="a" href="#food">Cakes</a>
+				<a class="a" href="#about">About</a>
+				<button class="icon-cart" href="" onclick="toggleCartPopup()"><span class="material-symbols-outlined">
+shopping_cart
+</span>
+<span id="cart-count">0</span>
+</button>
+<button class="button">Order Now</button>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"><span class="material-symbols-outlined">
+more_vert
+</span>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"><a class="a" href="#home">Home</a>
+				<a class="a" href="#food">Our Cakes</a>
+				<a class="a" href="#about">About</a>
+				
+      </div>
+  </div> 
+</div>
+</ul>
+
+
+</nav>
+
+<div id="cart-popup" class="cart-popup">
+	<h4>Shopping Cart</h4>
+	<table id="cart-items">
+		<thead>
+			<tr>
+				<th>Items</th>
+				<th>No. of Items</th>
+				<th>Price(Rs)</th>
+				<th>Total(Rs)</th>
+			</tr>
+		</thead>
+	<tbody></tbody>
+	</table>
+	<p>Total(Rs) <span id="cart-total">0.00</span></p>
+	<a class="cart-close" onclick="closeCart()"><span class="material-symbols-outlined">
+close
+</span></a>
+<button class="button" onclick="alert(' You have Ordered Succesfully..')">Order Now</button>
+</div>
+		<div class="main">
+			<div class="mainText">
+				<h1>Making your <span>life Sweeter!</span></h1>
+				<h2>Yummy Cakes!!</h2>
+				<p>Order Now and celebrate your <br>special moments with yummy and<br> delicious cakes...</p>
+			</div>
+			<img src="images/main2.png">
+
+			
+		</div>
+		
+		<div class="about" id="about">
+			<h1>About <span>Us</span></h1>
+			<p>Welcome to our cake bake website where every slice tells a story of passion. Our menu offers a tentalizing array of flavors and textures to suit every palate. At Cake Bake, we believe that every celebration deserve a touch of sweetness, and we honored to be a part of life's most cherished moments. Join us as we continue to redefine the essence of dessert, one delectable slice at a time. </p>
+		
+		</div>
+
+
+		<div class="dish" id="dish">
+			<div class="head">
+				<h1>Our <span>Special Cakes!</span></h1>
+			</div>
+			<div class="best-main">	
+			<div class="best">
+				<img src="images/S1.png">
+				<div class="bestText">
+					<p>Special cake for your<br> little kid's Birthday.
+					Enjoy your Day!</p>
+					<button>Order Now</button>
+
+				</div>
+			</div>	
+			<div class="best">
+				<img src="images/S2.png">
+				<div class="bestText">
+					<p>Special cake with stawberry <br>flavor for your <br>loved once!</p>
+					<button>Order Now</button>
+
+				</div>
+			</div>	
+
+	
+	<div class="best">
+				<img src="images/S3.png">
+				<div class="bestText">
+					<p>There's something <br>magical about the <br>red heart shaped cake.<br>
+					Symbol of Love!</p>
+					<button>Order Now</button>
+
+				</div>
+			</div>	
+	
+		</div>
+	</div>
+
+
+		<div class="Cakecards" id="food">
+			<div class="head">
+				<h1>Order <span>Cakes!</span></h1>
+			</div>
+				<div class="card">
+					<div class="crd">
+						<img src="images/1.png">
+						<div class="cakeText"><h1>Apple Cake</h1>
+						<p>As the name suggests, uses apples as the main ingredient and decorated with slices of fresh apple. <h4>Rs. 500/-</h4></p>
+						
+
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Apple Cake',500.00)">Add to cart</button>
+</div>
+					</div>
+				
+					<div class="crd">
+						<img src="images/2.png">
+						<div class="cakeText"><h1>Battenberg Cake</h1>
+						<p>It is a light sponge cake held together with jam and has two-by-two check patten inside!<h4>Rs. 450/-</h4></p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Battenberg Cake',450.00)">Add to cart</button></div>
+					</div>
+				
+					<div class="crd">
+						<img src="images/3.png">
+						<div class="cakeText"><h1>Black Forest Cake
+</h1>
+						<p>It is usually made using chocolate, whipped cream, and cherries.<h4>Rs. 600/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Black Forest Cake',600.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/4.png">
+						<div class="cakeText"><h1>Banana Cake
+
+</h1>
+						<p>It is made using mashed ripe bananas. Using wheat, water, sugar and bananas, this delicacy has its own fan base. Topped with chopped bananas for justification and delight!<h4>Rs. 400/-</h4>
+
+</p>
+						<button>Order Now</button><button onclick="addToCart('Banana Cake',400.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/5.png">
+						<div class="cakeText"><h1>Brownie Cake
+
+</h1>
+						<p>It contains nuts and chocolate chips. Also, no whipped cream because it already has enough flavours to satisfy the sweet tooth.<h4>Rs. 460/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Brownie Cake',460.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/6.png">
+						<div class="cakeText"><h1>Bundt Cake
+
+</h1>
+						<p>Bundt cake is baked in a Bundt pan, shaping it into a distinctive doughnut shape, inspired by a traditional European cake known as Gugelhupf.<h4>Rs. 390/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Bundt Cake',390.00)">Add to cart</button></div>
+					</div>
+					
+					<div class="crd">
+						<img src="images/7.png">
+						<div class="cakeText"><h1>Carrot Cake
+</h1>
+						<p>Not hard to guess that it surely has carrots in it. There are many ways to bake it – some used crushed carrots and some uses slices.<h4>Rs. 500/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Carrot Cake',500.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/8.png">
+						<div class="cakeText"><h1>Chocolate Cake
+
+</h1>
+						<p>Chocolate cake is the most popular Cake around the world. And it has many different variants. Another cake in the cake names list is loved by the entire globe.<h4>Rs. 540/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Chocolate Cake',540.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/9.png">
+						<div class="cakeText"><h1>Chocolava Cake
+
+</h1>
+						<p>It is a variant of chocolate cake filled with liquid chocolate syrup. When cut, the liquid flows out, and it looks like lava flowing from the volcano.<h4>Rs. 650/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Chocolava Cake',650.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/10.png">
+						<div class="cakeText"><h1>Coconut Cake
+
+</h1>
+						<p>A cake made by enslaved people in the South of America but brought breaking down of coconut’s knowledge from Africa. Stuffed with the goodness of coconut, the Cake is a scrumptious treat and appeal royal.<h4>Rs. 490/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Coconut Cake',490.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/11.png">
+						<div class="cakeText"><h1>Cupcakes
+
+</h1>
+						<p>A cup-sized version of cakes, cupcakes are too good for small and sweet hunger calls. From kids to elderly people, everyone is fond of these tiny delicacies.<h4>Rs. 150/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('CupCakes',150.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/12.png">
+						<div class="cakeText"><h1>Heart-Shaped Cake
+
+</h1>
+						<p>Heartshaped cakes mostly sell on occasions like Valentine’s Day and Anniversaries. Can be baked in any flavour!<h4>Rs. 700/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Heart Shaped Cake',700.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/13.png">
+						<div class="cakeText"><h1>Poster Cake
+
+</h1>
+						<p>Poster Cakes have already prepared templates which can be personalised. Also, it is one of the trending and beloved cakes of today’s time.<h4>Rs. 700/-</h4></p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Poster Cake',700.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/14.png">
+						<div class="cakeText"><h1>Red Velvet Cake
+
+</h1>
+						<p>Beetroot juice and cocoa powder are the main ingredients of Red velvet cake, but bakers have started using food colour instead of beetroot juice. Quite an appealing delicacy to celebrate any occasion.<h4>Rs. 590/-</h4>
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Red Velvet Cake',590.00)">Add to cart</button></div>
+					</div>
+					<div class="crd">
+						<img src="images/15.png">
+						<div class="cakeText"><h1>Swiss Roll Cake
+
+</h1>
+						<p>Swiss roll cake is a type of sponge cake prepared in the roll shape and filled with whipped cream or jam or another icing.<h4>Rs. 300/-</h4>
+
+</p>
+						<button>Order Now</button><button class="add-to-cart-btn" onclick="addToCart('Swiss Roll Cake',300.00)">Add to cart</button></div>
+					</div>
+				</div>
+
+		</div>
+
+
+		<div class="contact">
+			<h1>Contact <span>Us</span></h1>
+				<div class="contact-us">
+					<div>
+					<span class="material-symbols-outlined">mail
+</span>
+<h3>E-mail</h3>
+
+<p>Our friendly team<br> is here to help.<br>
+cb@gmail.com</p>
+</div>
+<div>
+<span class="material-symbols-outlined">
+location_on
+</span>
+<h3>Office</h3>
+
+<p>Come say hello <br>at our office.<br>
+121 Rock Street,<br>21 Avenue,
+Chandigarh</p>
+</div>
+
+<div>
+<span class="material-symbols-outlined">
+call
+</span>
+
+<h3>Phone</h3>
+<p>Mon-Fri from<br> 8am to 5pm<br>
++91 95XX72XX66</p>
+</div>
+
+					
+				</div>
+		</div>
+	<hr>	
+
+		<div class="footer2">Copyright &copy; 2024
+		</div>
+	
+			
+	
+<script src="script.js" ></script>
+</body>
+</html>
